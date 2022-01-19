@@ -1,8 +1,8 @@
 - 👋 Hi, I’m @CarolinaArtero
-- 👀 I’m interested in ...
+- 👀 I’m a student in the information technology gestation. 
 - 🌱 I’m currently learning  Web Developer
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+- 📫 How to reach me: carolina.artero@yahoo.com
+- Instagram: carolina_artero
 
 <!---
 CarolinaArtero/CarolinaArtero is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
