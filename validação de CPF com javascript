@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Validação de CPF </title>
+</head>
+<body>
+    <h1>Validação de CPF</h1>
+    <input type = "text" name = "CPF" required = ""maxlength = "11" ></br>
+    <input type = "submit" name = "Validar">
+
+</body>
+<script>
+function D1(cpf) {
+  let sum = 0;
+  for (let i = 0; i < 9; i++) {
+    sum += cpf[i] * (10 - i);
+  }
+  const resto = (sum * 10) % 11;
+  if (resto < 10) {
+    return cpf[9] == resto;
+  }
+  return cpf[9] == 0;
+}
+
+function D2(cpf) {
+  let sum = 0;
+  for (let i = 0; i < 10; i++) {
+    sum += cpf[i] * (11 - i);
+  }
+  const resto = (sum * 10) % 11;
+  if (resto < 10) {
+    return cpf[10] == resto;
+  }
+  return cpf[10] == 0;
+}
+
+function validarRepeat(cpf) {
+  const primeiro = cpf[0];
+  let diferente = false;
+  for(let i = 1; i < cpf.length; i++) {
+    if(cpf[i] != primeiro) {
+      diferente = true;
+    }
+  }
+  return diferente;
+}
+
+function validarCpf(cpf) {
+  if (cpf.length != 11) {
+    return false;
+  }
+  if(!validarRepeat(cpf)) {
+    return false;
+  }
+  if (!D1(cpf)) {
+    return false;
+  }
+  if (!D2(cpf)) {
+    return false;
+  }
+  return true;
+}
+
+const cpf = "11111000001".split("").map((e) => parseInt(e));
+
+const cpfValido = validarCpf(cpf);
+
+console.log(cpfValido);
+</script>
+</html>
