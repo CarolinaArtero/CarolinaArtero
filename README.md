@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @CarolinaArtero
 - 👀 I’m a student in the information technology gestation. 
-- 🌱 I’m currently learning  Web Developer
+- 🌱 I’m currently learning  Data Analytics
 - 📫 How to reach me: carolina.artero@yahoo.com
 - Instagram: carolina_artero
 
